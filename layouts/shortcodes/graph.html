@@ -1,0 +1,3 @@
+{{ $dir := printf "out/%s" (.Page.File.Dir | strings.TrimSuffix "/") }}
+
+![{{ printf "%s" $dir }}.svg]({{printf "%s" $dir }}.svg)
